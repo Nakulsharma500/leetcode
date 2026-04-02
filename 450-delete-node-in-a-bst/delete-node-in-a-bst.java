@@ -15,13 +15,13 @@
  */
 class Solution {
 
-    public TreeNode inordersuccessor(TreeNode root){
-        if (root == null) return null;
-          while(root.left!=null){
-            root=root.left;
-          }
-          return root;
-    }
+    // public TreeNode inordersuccessor(TreeNode root){
+    //     if (root == null) return null;
+    //       while(root.left!=null){
+    //         root=root.left;
+    //       }
+    //       return root;
+    // }
 
 
     public TreeNode deleteNode(TreeNode root, int key) {
@@ -61,4 +61,14 @@ class Solution {
 
         
     }
+
+
+    public TreeNode inordersuccessor(TreeNode root){
+        if (root == null) return null;
+         while(root.left!=null){
+        root=root.left;
+    }
+        return root;
+    }
+    
 }
