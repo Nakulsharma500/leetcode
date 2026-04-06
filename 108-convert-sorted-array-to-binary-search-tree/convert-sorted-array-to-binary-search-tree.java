@@ -20,7 +20,7 @@ class Solution {
     }
 
 
-    private TreeNode createbst(int [] nums ,int st, int end){
+    public TreeNode createbst(int [] nums ,int st, int end){
         if(st>end){
             return null;
         }
